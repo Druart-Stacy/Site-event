@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-danger {
+  background-color: #fdb9dc !important;
+}
+
+.carousel-item img {
+  width: 100%; /* Prend toute la largeur du carousel */
+  height: 400px; /* Fixe la hauteur des images */
+  -o-object-fit: cover;
+     object-fit: cover; /* Remplit l'espace sans déformer l'image */
+}/*# sourceMappingURL=style.css.map */

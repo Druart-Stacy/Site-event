@@ -1,0 +1,20 @@
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.bg-danger{
+    background-color:#fdb9dc !important;
+}
+
+.carousel-item img {
+    width: 100%;       /* Prend toute la largeur du carousel */
+    height: 400px;     /* Fixe la hauteur des images */
+    object-fit: cover; /* Remplit l'espace sans déformer l'image */
+  }
+//   .bi {
+//     fill: #000000;  /* Couleur noire */
+//     opacity: 1;     /* Assurez-vous que l'opacité est à 100% */
+//   }
+  
