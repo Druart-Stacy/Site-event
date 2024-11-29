@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Event</title>
+    <title>Infos</title>
     <meta name="description" content="Détails d'un manga de Stacy Druart">
 
     <!-- Liens vers les ressources externes -->
@@ -62,9 +62,8 @@
         <!-- expliquer le temp min et max sur scene -->
     <h1>Formulaire d'inscription concour cosplay du ..../..../....</h1>
 </div>
-    <!-- infos a demande a la personne(si le cosplay a ete fait main ou acheter si oui ce qui 
-     a été fait main par la personne ,pseudo du cosplayer,
-     ,numero de gsm ,goupe oui non  ,musique ) -->
+    <!-- infos a demande a la personne(
+     si le cosplay a ete fait main ou acheter si oui ce qui a été fait main par la personne,avez vous deja participer a un concour (en convention ou autre tant que sa concerne le cosplay)  ) -->
      <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Votre nom:</label>
         <input type="text" class="form-control" id="nom" name="nom" required placeholder="Votre nom">
@@ -83,6 +82,12 @@
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="N°"><br>
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Code postal"><br>
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ville">
+      <div class="mb-3">
+        <!-- mettre au format numérique uniquement -->
+        <label for="telephone" class="form-label">Numéro de téléphone :</label>
+        <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="+33 6 12 34 56 78" pattern="^\+?[0-9\s.-]{10,15}$" required>
+        <div class="form-text">Entrez un numéro au format international, ex : +33 6 12 34 56 78.</div>
+    </div>
 <!-- partie concernat le cosplayeur -->
       <label for="exampleFormControlInput1" class="form-label">pseudo:</label>
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pseudo">
@@ -111,10 +116,29 @@
         <input type="file" id="file" class="form-control" accept="image/*" required>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Image de vous en cosplay</label>
+        <label for="exampleFormControlTextarea1" class="form-label">musique</label>
         <input type="file" id="file" class="form-control" accept="audio/*" required>
       </div>
-    </section>
+      <label for="exampleFormControlInput1" class="form-label">Vous le faite en groupe?</label>
+      
+        <div class="form-check form-check-inline ">
+            <input class="form-check-input" type="radio" name="choix" id="oui" value="oui" >
+            <label for="remarque1" class="form-label">oui</label>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">faite vous en groupe ?</label><br>
+            <!-- si oui demader le pseudo personnage univers des autres participant et le nombre de personne -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="choix" id="oui" value="oui" onclick="toggleTextField()">
+                    <label for="remarque1" class="form-label">oui</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="choix" id="non" value="non" onclick="toggleTextField()">
+                    <label class="form-check-label" for="non">Non</label>
+                </div>
+          </div>
+       
+    </div>
 
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
