@@ -17,4 +17,8 @@
 //     fill: #000000;  /* Couleur noire */
 //     opacity: 1;     /* Assurez-vous que l'opacité est à 100% */
 //   }
-  
+.text-body-Primary{
+  color:#2C3E50 !important;
+  fill: #2C3E50; /* Important pour que le SVG prenne la couleur */
+
+}

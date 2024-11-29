@@ -14,4 +14,9 @@
   height: 400px; /* Fixe la hauteur des images */
   -o-object-fit: cover;
      object-fit: cover; /* Remplit l'espace sans déformer l'image */
+}
+
+.text-body-Primary {
+  color: #2C3E50 !important;
+  fill: #2C3E50; /* Important pour que le SVG prenne la couleur */
 }/*# sourceMappingURL=style.css.map */

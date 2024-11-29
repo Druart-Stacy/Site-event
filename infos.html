@@ -1,11 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    gggg
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event</title>
+    <meta name="description" content="Détails d'un manga de Stacy Druart">
+
+    <!-- Liens vers les ressources externes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Scripts externes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sevillana&display=swap" rel="stylesheet">
+  </head>
+
+<body class="bg-danger">
+    <div class="container">
+      
+      <header class="d-flex justify-content-center py-3 ">
+        <nav class="navbar navbar-expand-lg navbar-light sevillana-regular fs-4">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="evens.html">Nos events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">À propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="test.html">À propos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+      </header>
+        <div class="bd-example m-0 border-0">
+    <section>
+ 
+</section>
+<section id="concours-cosplay">
+    <div class="mb-3">
+        <!-- expliquer le temp min et max sur scene -->
+    <h1>Formulaire d'inscription concour cosplay du ..../..../....</h1>
+</div>
+    <!-- infos a demande a la personne(si le cosplay a ete fait main ou acheter si oui ce qui 
+     a été fait main par la personne ,pseudo du cosplayer,
+     ,numero de gsm ,goupe oui non  ,musique ) -->
+     <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Votre nom:</label>
+        <input type="text" class="form-control" id="nom" name="nom" required placeholder="Votre nom">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Votre prénom:</label>
+        <input type="text" class="form-control"  id="prénom" required placeholder="Votre prénom">
+     </div>
+     <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Addresse mail:</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <!-- partie concernat le privé -->
+      <label for="exampleFormControlInput1" class="form-label">Addresse:</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Rue"><br>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="N°"><br>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Code postal"><br>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ville">
+<!-- partie concernat le cosplayeur -->
+      <label for="exampleFormControlInput1" class="form-label">pseudo:</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pseudo">
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Personnage incarné:</label>
+        <input class="form-control" id="exampleFormControlTextarea1" placeholder="Personnage incarné"></input>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Univers (Comics,manga,jeux,...)</label>
+        <input class="form-control" id="exampleFormControlTextarea1" placeholder="Univers"></input>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Cosplay crée par vous même ?</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="choix" id="oui" value="oui" onclick="toggleTextField()">
+                <label for="remarque1" class="form-label">oui</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="choix" id="non" value="non" onclick="toggleTextField()">
+                <label class="form-check-label" for="non">Non</label>
+            </div>
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Image de vous en cosplay</label>
+        <input type="file" id="file" class="form-control" accept="image/*" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Image de vous en cosplay</label>
+        <input type="file" id="file" class="form-control" accept="audio/*" required>
+      </div>
+    </section>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </section>
+    
 </body>
 </html>
