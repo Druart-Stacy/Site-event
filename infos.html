@@ -57,7 +57,7 @@
     <section>
  
 </section>
-<section id="concours-cosplay">
+<section id="concours-cosplay" class="sevillana-regular fs-4">
     <div class="mb-3">
         <!-- expliquer le temp min et max sur scene -->
     <h1>Formulaire d'inscription concour cosplay du ..../..../....</h1>
@@ -101,7 +101,7 @@
         <input class="form-control" id="exampleFormControlTextarea1" placeholder="Univers"></input>
       </div>
       <div class="mb-3">
-        <label class="form-label">Cosplay crée par vous même ?</label><br>
+        <label class="form-label">Votre cosplay a t'il été crée par vous même ?</label><br>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="choix" id="oui" value="oui" onclick="toggleTextField()">
                 <label for="remarque1" class="form-label">oui</label>
@@ -119,31 +119,25 @@
         <label for="exampleFormControlTextarea1" class="form-label">musique</label>
         <input type="file" id="file" class="form-control" accept="audio/*" required>
       </div>
-      <label for="exampleFormControlInput1" class="form-label">Vous le faite en groupe?</label>
-      
-        <div class="form-check form-check-inline ">
-            <input class="form-check-input" type="radio" name="choix" id="oui" value="oui" >
-            <label for="remarque1" class="form-label">oui</label>
-        </div>
         <div class="mb-3">
             <label class="form-label">faite vous en groupe ?</label><br>
             <!-- si oui demader le pseudo personnage univers des autres participant et le nombre de personne -->
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="choix" id="oui" value="oui" onclick="toggleTextField()">
+                    <input class="form-check-input" type="radio" name="choix2" id="oui2" value="oui" onclick="toggleTextField()">
                     <label for="remarque1" class="form-label">oui</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="choix" id="non" value="non" onclick="toggleTextField()">
+                    <input class="form-check-input" type="radio" name="choix2" id="non2" value="non" onclick="toggleTextField()">
                     <label class="form-check-label" for="non">Non</label>
                 </div>
           </div>
-       
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
     </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+      
     </section>
     
 </body>
