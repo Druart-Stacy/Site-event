@@ -1,5 +1,5 @@
 # Projet site event
-
+Projet fictif d'une convention geek 
 ## contenue:
 ### html
 page index.html
@@ -12,7 +12,7 @@ style.scss
 
 ### img
 
-## a ajouter au projet
+## A ajouter au projet
 -integration agenda à la page nos events
 
 ## contripution

@@ -18,40 +18,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sevillana&display=swap" rel="stylesheet">
+    <script defer src="header.js"></script>
+    
   </head>
-
-<body class="bg-danger">
-    <div class="container">
-      
-      <header class="d-flex justify-content-center py-3 ">
-        <nav class="navbar navbar-expand-lg navbar-light sevillana-regular fs-4">
-          <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">Logo</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active " href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="evens.html">Nos events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Galerie</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">À propos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="test.html">À propos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+  
+  <body class="bg-danger">
+    <div id="header"></div> 
+      <div class="container">
+        
+    
+        </div>
         <div class="bd-example m-0 border-0">
     
           <div id="carouselExample" class="carousel slide ">
@@ -121,10 +97,11 @@
             <div class="col">
               <div class="card shadow-sm image-hover">
                   
-                      <div class="img-overlay-container"> <a href="">
-                          <img src="assets/img/game.jpg" class="card-img-top zoom-img" alt="" width="100%" height="225">
-                          <div class="overlay-text"></a>
-                            <p class="text-body-Primary">Zone jeux</p>
+                      <div class="img-overlay-container"> <a href="evens.html#jeux">
+                          <img src="assets/img/game.jpg" class="card-img-top zoom-img d-block w-100" alt="" width="100%" height="225">
+                          </a>
+                          <div class="position-absolute bottom-1 start-50 translate-middle-x text-center w-100">
+                            <p class="text-white bg-dark bg-opacity-50 py-2 mb-0">Zone jeux</p>
                           </div>
                       </div>
                   </a>
@@ -134,23 +111,26 @@
               <div class="col">
                 <div class="card shadow-sm image-hover ">
                     
-                        <div class="img-overlay-container">
-                            <img src="*******" class="card-img-top zoom-img" alt="" width="100%" height="225">
-                            <div class="overlay-text">
-                                <p class="text-body-Primary">Market</p>
+                        <div class="img-overlay-container"> <a href="evens.html#market">
+                            <img src="assets/img/store-middle-corridor.jpg" class="card-img-top " alt="" width="100%" height="225"></a>
+                            <div class="position-absolute bottom-1 start-50 translate-middle-x text-center w-100">
+                                <p class="text-white bg-dark bg-opacity-50 py-2 mb-0">Market</p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
+          </div>
+          <!-- remplacer br -->
+          <br><br>
              <!-- Troisième image -->
+              <div class="row row-cols-1 row-cols-md-2 g-3 ">
              <div class="col">
               <div class="card shadow-sm image-hover">
-                  
-                      <div class="img-overlay-container">
-                          <img src="*****" class="card-img-top zoom-img" alt="" width="100%" height="225">
-                          <div class="overlay-text">
-                              <p class="text-body-Primary">Artiste</p>
+                      <div class="img-overlay-container"><a href="evens.html#artiste">
+                          <img src="assets/img/peinture.jpg" class="card-img-top zoom-img" alt="" width="100%" height="225"></a>
+                          <div class="position-absolute bottom-1 start-50 translate-middle-x text-center w-100">
+                              <p class="text-white bg-dark bg-opacity-50 py-2 mb-0">Artistes</p>
                           </div>
                       </div>
                   </a>
@@ -158,43 +138,32 @@
           </div>
           </div>
       </section>
-      <h1 class="display-5 fw-bold fs-3 text-body-Primary sevillana-regular">Nos partenaires</h1>
-      <h2 class="text-body-Primary sevillana-regular">La maison de Sakura</h2> <a href="https://www.facebook.com/p/La-maison-de-Sakura-100064870458575/?locale=fr_FR" target="_blank">
-      <img src="assets/img/la-maison-sakura.jfif" alt=""></a>
-
-      <h2 class="text-body-Primary sevillana-regular">Neopolis</h2> <a href="https://www.facebook.com/p/NEOPOLIS-Dour-100063520391455/?locale=fr_FR" target="_blank">
-      <img src="assets/img/Neopolis.png" alt=""> </a>
-      <h2 class="text-body-Primary sevillana-regular">partenaire 3</h2>
+       <!-- remplacer br -->
+      <br><br>
+        <h1 class="display-5 fw-bold fs-3 text-body-Primary sevillana-regular">Nos partenaires :</h1>
+      <div class="row justify-content-center">   
+        <div class="col col-md-4 text-center ">
+        <h2 class="text-body-Primary sevillana-regular text-center">La maison de Sakura</h2> <a href="https://www.facebook.com/p/La-maison-de-Sakura-100064870458575/?locale=fr_FR" target="_blank">
+        <img src="assets/img/la-maison-sakura.png" class="img-fluid  " style="width: 200px; height: 200px;"  alt=""></a>
       </div>
+        <div class="col col-md-4 text-center ">
+          <h2 class="text-body-Primary sevillana-regular text-center">Neopolis</h2> <a href="https://www.facebook.com/p/NEOPOLIS-Dour-100063520391455/?locale=fr_FR" target="_blank">
+            <img src="assets/img/Neopolis.png " style="width: 200px; height: 200px;"  class="img-fluid "></a>
+        </div>
+        <div class="col col-md-4 text-center ">
+          <h2 class="text-body-Primary sevillana-regular text-center">Sominy hame</h2> <a href="****" target="_blank">
+            <img src="assets/img/radio.webp" style="width: 200px; height: 200px;" class="img-fluid" alt=""></a>
+        </div>
     
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top sevillana-regular">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, By DragonBleu98</span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-Primary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-Primary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-Primary" href="https://www.facebook.com/"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            <svg style="display: none;">
-              <defs>
-                <symbol id="twitter" viewBox="0 0 24 24">
-                  <path d="M23.639 4.794c-.88.389-1.823.653-2.814.773a4.945 4.945 0 0 0 2.164-2.725 9.927 9.927 0 0 1-3.127 1.21 4.919 4.919 0 0 0-8.52 4.482A13.98 13.98 0 0 1 1.671 3.149 4.917 4.917 0 0 0 3.18 10.85a4.902 4.902 0 0 1-2.22-.616v.062a4.917 4.917 0 0 0 3.948 4.815 4.962 4.962 0 0 1-2.21.084 4.93 4.93 0 0 0 4.604 3.419 9.866 9.866 0 0 1-7.257 1.805 13.95 13.95 0 0 0 7.548 2.215c9.057 0 14.026-7.5 14.026-14.027 0-.213 0-.426-.016-.638a9.93 9.93 0 0 0 2.466-2.537z"/>
-                </symbol>
-                <symbol id="instagram" viewBox="0 0 24 24">
-                  <path d="M12 2.162c3.214 0 3.597.012 4.867.07 1.245.057 2.289.268 3.172.898.88.625 1.542 1.474 2.168 2.609.63.992.843 1.952.898 3.196.058 1.27.07 1.653.07 4.868s-.012 3.598-.07 4.868c-.057 1.244-.268 2.205-.898 3.197-.626 1.135-1.288 1.984-2.168 2.609-.883.63-1.927.841-3.172.898-1.27.058-1.653.07-4.868.07s-3.598-.012-4.868-.07c-1.245-.057-2.29-.268-3.172-.898-.88-.625-1.542-1.474-2.168-2.609-.63-.992-.843-1.952-.898-3.196-.058-1.27-.07-1.653-.07-4.868s.012-3.597.07-4.868c.057-1.244.268-2.205.898-3.196.626-1.135 1.288-1.984 2.168-2.609.883-.63 1.927-.841 3.172-.898 1.27-.058 1.653-.07 4.868-.07z"/>
-                </symbol>
-                <symbol id="facebook" viewBox="0 0 24 24">
-                  <path d="M22.672 0h-21.344c-.73 0-1.328.598-1.328 1.328v21.344c0 .73.598 1.328 1.328 1.328h11.344v-9.344h-3v-3.672h3v-2.697c0-4.049 3.021-6.328 6.666-6.328 1.922 0 3.572.143 4.165.211v3.049h-2.828c-2.212 0-2.672 1.047-2.672 2.552v3.201h4.468l-.574 3.672h-3.894v9.344h7.828c.73 0 1.328-.598 1.328-1.328v-21.344c0-.73-.598-1.328-1.328-1.328z"/>
-                </symbol>
-              </defs>
-            </svg>
-            
-          </ul>
-        </footer>
       </div>
+    </div>
+
+    <!-- Inclusion du footer via JS -->
+    <!-- Zone où le footer sera injecté -->
+    <div id="footer"></div>
+
+    <!-- Scripts externes et votre footer.js -->
+    <script defer src="footer.js"></script>
 </body>
+
 </html>
