@@ -44,7 +44,7 @@ Auteurs
 DragonBleu98 - Développeur principal et créateur du projet.
 Licence
 Ce projet est sous la licence MIT - voir le fichier LICENSE pour plus de détails.
-
+police  sevillana-regular(google font)
 
 ## Installation
 
